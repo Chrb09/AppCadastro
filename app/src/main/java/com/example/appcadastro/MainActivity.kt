@@ -117,7 +117,7 @@ fun App(){
 @Composable
 fun TextField(labelValue: String) {
     var text by remember { mutableStateOf(TextFieldValue("")) }
-    TextField(
+    OutlinedTextField(
         value = text,
         onValueChange = {
             text = it
